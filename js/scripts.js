@@ -5,12 +5,12 @@ const mars = {
   temp: '-153 to 20 °C',
   orbitDays: '687',
   orbitYears: '1.9',
-  description: 'The fourth planet from the Sun and the second smallest planet in the solar system. Named after the Roman god of war, Mars is also often described as the “Red Planet” due to its reddish appearance. It\'s a terrestrial planet with a thin atmosphere composed primarily of carbon dioxide.',
-  facts: 'Mars has the largest dust storms in the solar system. They can last for months and cover the entire planet. On Mars the Sun appears about half the size as it does on Earth.'
+  description: `The fourth planet from the Sun and the second smallest planet in the solar system. Named after the Roman god of war, Mars is also often described as the “Red Planet” due to its reddish appearance. It\'s a terrestrial planet with a thin atmosphere composed primarily of carbon dioxide.',
+  facts: 'Mars has the largest dust storms in the solar system. They can last for months and cover the entire planet. On Mars the Sun appears about half the size as it does on Earth.`
 };
 
 function createPlanetHTML(planet) {
-  return  (`<div class="card">   
+  return  `<div class="card">   
        <div>   
        <img src="img/${planet.name}.jpg" alt="${planet.name}">   
        </div>   
@@ -24,7 +24,7 @@ function createPlanetHTML(planet) {
        <li><strong>Orbit Period: </strong>    ${planet.orbitDays}     days      (${planet.orbitYears}     years)     </li>   
        </ul>   
        <p>    ${planet.facts}    </p>   
-       </div>`) ;
+       </div>`;
 }
 
 document.querySelector('body').innerHTML = createPlanetHTML(mars);
